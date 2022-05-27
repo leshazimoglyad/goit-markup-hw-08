@@ -4,8 +4,8 @@
   margin-left: auto;
   margin-right: auto;
   background: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -15,29 +15,34 @@
   background-size: cover;
   background-position: center;
   @media screen and (min-width: 480px) {
-    max-width: 480px;
   }
   @media screen and (min-width: 768px) {
-    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero__title {
-  @include font(26px, 1.6, 900, 0.06em);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
   color: var(--background-color);
   margin: 0 auto;
+  width: 360px;
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1200px) {
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -101,7 +106,7 @@
 }
 .hero-menu__button {
   content: "";
-  width: 270px;
+  width: 450px;
   height: 120px;
   display: flex;
   background-color: #f5f4fa;
@@ -110,6 +115,14 @@
   background-size: contain;
   align-items: center;
   justify-content: center;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .hero-menu__button-icon {
   width: 70px;
@@ -120,7 +133,6 @@
 }
 
 .hero-menu__item-title {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
@@ -129,6 +141,14 @@
   text-transform: uppercase;
   color: var(--secondary-color);
   margin-bottom: 10px;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .hero-menu__text {
   font-weight: 400;

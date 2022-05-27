@@ -61,6 +61,10 @@
   margin-left: 32px;
   margin-right: 32px;
   margin-top: 16px;
+  justify-content: center;
+  & :not(:last-child) {
+    margin-right: 10px;
+  }
 }
 .button-personnel {
   width: 44px;
@@ -83,7 +87,4 @@
 .button-personnel__icon {
   width: 20px;
   height: 20px;
-}
-.personnel-button-menu :not(:last-child) {
-  margin-right: 10px;
 }
