@@ -1,7 +1,24 @@
 .employment {
   padding-bottom: 94px;
   padding-top: 0px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
+.employment-menu {
+  display: flex;
+  margin-left: -30px;
+}
+.employment-menu__item {
+  background: var(--background-color);
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+}
+
 .employment-menu__img-text-container {
   position: relative;
 }
@@ -22,9 +39,4 @@
   padding: 27px 82px;
 
   color: var(--background-color);
-}
-.employment-menu__item {
-  background: var(--background-color);
-  flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
 }
