@@ -7,12 +7,16 @@
   text-align: center;
   justify-content: center;
   @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 760px) {
-  }
   @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    text-align: start;
+    justify-content: inherit;
   }
 }
 .footer-logo {
@@ -31,7 +35,7 @@
   }
   @media screen and (min-width: 480px) {
   }
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
   }
@@ -83,11 +87,14 @@
 .social-networks {
   margin-top: 60px;
   @media screen and (min-width: 480px) {
+    margin-top: 60px;
   }
-  @media screen and (min-width: 760px) {
-    margin-left: 70px;
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+    margin-top: 0px;
   }
   @media screen and (min-width: 1200px) {
+    margin-left: 70px;
   }
 }
 .social-networks__button-menu {
@@ -95,7 +102,7 @@
   justify-content: center;
   @media screen and (min-width: 480px) {
   }
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
   }
@@ -146,10 +153,14 @@
   margin-top: 60px;
   @media screen and (min-width: 480px) {
   }
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
+    width: 570px;
     margin-left: 93px;
+    margin-top: 0px;
   }
 }
 
@@ -171,15 +182,21 @@
   border-radius: 4px;
   padding: 15px;
   background: #2f303a;
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   align-items: center;
   letter-spacing: 0.03em;
-
   color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .footer-input-container__btn {
   width: 200px;
@@ -201,10 +218,11 @@
   justify-content: center;
   @media screen and (min-width: 480px) {
   }
-  @media screen and (min-width: 760px) {
+  @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
     margin-left: 12px;
+    margin-top: 0px;
   }
 }
 .footer-input-container__icon-send {
