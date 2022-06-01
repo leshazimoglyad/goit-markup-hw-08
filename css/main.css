@@ -58,6 +58,7 @@ h6 {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  display: flex;
 }
 
 .logo--blue {
@@ -66,6 +67,48 @@ h6 {
 
 .logo--black {
   color: var(--secondary-color);
+}
+
+@media screen and (min-width: 480px) {
+  .logo__button {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    margin-left: 276px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo__button {
+    display: none;
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .logo__button-icon {
+    width: 24px;
+    height: 16px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .logo__button-icon:hover {
+    color: #2196f3;
+  }
+  .logo__button-icon:focus {
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo__button-icon {
+    display: none;
+  }
 }
 
 .navigation {
