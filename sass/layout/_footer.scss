@@ -19,6 +19,15 @@
     justify-content: inherit;
   }
 }
+.logo-and-address {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
+}
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;

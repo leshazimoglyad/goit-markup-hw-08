@@ -89,6 +89,14 @@ h6 {
   align-items: center;
 }
 
+.navigation:hover {
+  color: #2196f3;
+}
+
+.navigation:focus {
+  color: #2196f3;
+}
+
 @media screen and (min-width: 480px) {
   .logo__button-icon {
     width: 24px;
@@ -828,6 +836,12 @@ h6 {
     flex-wrap: nowrap;
     text-align: start;
     justify-content: inherit;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-and-address {
+    width: 231px;
   }
 }
 
