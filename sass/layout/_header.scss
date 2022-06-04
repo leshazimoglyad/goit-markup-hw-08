@@ -225,10 +225,7 @@
   @media screen and (min-width: 1200px) {
   }
 }
-.mob-menu-top {
-}
-.mob-menu-bottom {
-}
+
 .mob-menu__button {
   display: block;
   content: "";
@@ -238,6 +235,7 @@
   margin-left: auto;
   background-color: #fff;
   cursor: pointer;
+}
 .mob-menu__button-icon {
   width: 18.67px;
   height: 18.67px;
@@ -252,8 +250,7 @@
     fill: #2196f3;
   }
 }
-.mob-menu-list {
-}
+
 .mob-menu-list__item {
   font-family: "Roboto";
   font-style: normal;

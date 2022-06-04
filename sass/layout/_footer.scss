@@ -158,6 +158,15 @@
   width: 20px;
   height: 20px;
 }
+.footer-form {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+}
 .footer-input-container {
   margin-top: 60px;
   @media screen and (min-width: 480px) {

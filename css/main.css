@@ -312,15 +312,6 @@ h6 {
   margin-left: auto;
   background-color: #fff;
   cursor: pointer;
-  fill: black;
-}
-
-.mob-menu__button:hover {
-  color: #2196f3;
-}
-
-.mob-menu__button:focus {
-  color: #2196f3;
 }
 
 .mob-menu__button-icon {
@@ -1152,6 +1143,12 @@ h6 {
   height: 20px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+  }
+}
+
 .footer-input-container {
   margin-top: 60px;
 }
@@ -1551,6 +1548,7 @@ h6 {
 
 .work-menu__item:focus {
   box-sizing: border-box;
+  border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
