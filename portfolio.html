@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.css" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +22,11 @@
           <a class="logo logo--blue" href="" lang="ru"
             >Web<span class="logo logo--black">Studio</span>
           </a>
+          <button class="logo__button" data-menu-open>
+            <svg class="logo__button-icon">
+              <use href="./images/symbol-defs.svg#menu_24px"></use>
+            </svg>
+          </button>
           <ul class="menu">
             <li class="menu__item">
               <a class="menu__link" href="./index.html">Студия</a>
@@ -55,7 +60,67 @@
           </li>
         </ul>
       </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button class="mob-menu__button" data-menu-close>
+              <svg class="mob-menu__button-icon">
+                <use href="./images/symbol-defs.svg#icon-krestik"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="mob-menu-list__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-contact">
+              <li class="mob-contact__item mob-number">
+                <a
+                  class="mob-contact__link mob-font-number"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="mob-contact__item mob-email">
+                <a
+                  class="mob-contact__link mob-font-email"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mob-soc-list__menu">
+              <li class="mob-soc-list__item">
+                <a class="mob-soc-list__text">Instagram</a>
+              </li>
+              <li class="mob-soc-list__item">
+                <a class="mob-soc-list__text">Twitter</a>
+              </li>
+              <li class="mob-soc-list__item">
+                <a class="mob-soc-list__text">Facebook</a>
+              </li>
+              <li class="mob-soc-list__item">
+                <a class="mob-soc-list__text">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
+
     <main>
       <section class="main-portfolio">
         <h2 class="visually-hidden" aria-hidden="true" tabindex="-1">
@@ -283,9 +348,9 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div>
-          <a class="logo logo--blue" href="" lang="en"
-            >Web<span class="logo logo--white">Studio</span>
+        <div class="logo-and-address">
+          <a class="footer-logo footer-logo--blue" href="" lang="en"
+            >Web<span class="footer-logo footer-logo--white">Studio</span>
           </a>
           <address>
             <ul class="footer-menu-adress">
@@ -364,5 +429,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
