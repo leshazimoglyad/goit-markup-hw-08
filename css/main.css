@@ -88,20 +88,20 @@ h6 {
   align-items: center;
 }
 
-@media screen and (min-width: 480px) {
-  .logo__button-icon {
-    width: 24px;
-    height: 16px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .logo__button-icon:hover {
-    fill: #2196f3;
-  }
-  .logo__button-icon:focus {
-    fill: #2196f3;
-  }
+.logo__button-icon {
+  width: 24px;
+  height: 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo__button-icon:hover {
+  fill: #2196f3;
+}
+
+.logo__button-icon:focus {
+  fill: #2196f3;
 }
 
 @media screen and (min-width: 768px) {
