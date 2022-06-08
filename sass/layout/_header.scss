@@ -25,6 +25,11 @@
   }
 }
 .logo__button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  margin-left: 276px;
+  cursor: pointer;
   @media screen and (min-width: 480px) {
     width: 40px;
     height: 40px;

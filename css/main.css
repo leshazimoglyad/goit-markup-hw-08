@@ -69,6 +69,14 @@ h6 {
   color: var(--secondary-color);
 }
 
+.logo__button {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  margin-left: 276px;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 480px) {
   .logo__button {
     width: 40px;
