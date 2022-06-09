@@ -3,6 +3,14 @@
   border-bottom: #fff;
   border-bottom: 1px solid #ececec;
   display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  @media screen and (min-width: 1200px) {
+  }
 }
 .header .container {
   display: flex;
@@ -15,20 +23,35 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: flex;
+  align-items: center;
   &--blue {
     color: #2196f3;
   }
   &--black {
     color: var(--secondary-color);
   }
-  @media screen {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
-.logo__button {
+.logo-button {
+  margin-left: auto;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
+.logo-button__btn {
   width: 40px;
   height: 40px;
   background-color: #fff;
-  margin-left: auto;
+
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
@@ -45,7 +68,7 @@
   @media screen and (min-width: 480px) {
   }
 }
-.logo__button-icon {
+.logo-button__icon {
   width: 24px;
   height: 16px;
   background-position: center;
@@ -78,32 +101,33 @@
 }
 .menu__link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: block;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     color: #2196f3;
   }
   &:focus {
     color: #2196f3;
   }
+  font-size: 14px;
 }
+
 .menu__link.current::after {
   content: "";
   width: 100%;
   height: 4px;
   display: block;
-  bottom: -1px;
   position: absolute;
   border-radius: 2px;
   left: 0;
   background-color: #2196f3;
+  top: 44px;
 }
+
 .menu__link.current {
   color: #2196f3;
   position: relative;
@@ -153,41 +177,30 @@
 }
 .contact__link {
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   display: inline-flex;
   align-items: center;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: calc(24px + (16 + 16 * 1) * ((100vw - 280px) / 480));
   &:hover {
     color: #2196f3;
   }
   &:focus {
     color: #2196f3;
   }
+  @media screen and(min-width:480px) {
+    font-size: 14px;
+  }
   @media screen and (min-width: 768px) {
     padding-bottom: 0px;
     padding-top: 0px;
   }
   @media screen and (min-width: 1200px) {
-    padding-top: 32px;
-    padding-bottom: 32px;
   }
 }
-.email {
-  @media screen and (min-width: 460px) {
-    padding-top: 21px;
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 0px;
-  }
-}
-
 .number {
   @media screen and (min-width: 460px) {
     padding-top: 10px;
@@ -214,6 +227,7 @@
     height: 100%;
     justify-content: space-between;
     position: relative;
+    padding: 0;
   }
   @media screen and (min-width: 480px) {
   }
@@ -231,9 +245,11 @@
   margin-left: auto;
   width: 40px;
   height: 40px;
-  margin-left: auto;
   background-color: #fff;
   cursor: pointer;
+  position: absolute;
+  top: 21px;
+  right: 25px;
 }
 .mob-menu__button-icon {
   width: 18.67px;
@@ -271,6 +287,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
+  font-size: calc(8px + (10 + 10 * 1) * ((100vw - 280px) / 480));
   &:hover {
     color: #2196f3;
   }
@@ -322,7 +339,7 @@
 .mob-soc-list__menu {
   display: flex;
   & :not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -336,11 +353,17 @@
 
   color: #2196f3;
 }
-.mob-soc-list__item::after {
-  width: 22px;
-  height: 0px;
-  content: "";
-  position: absolute;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
+.mob-soc-list__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+    &::before {
+      content: "";
+      width: 22px;
+      height: 0px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+
+      transform: rotate(90deg);
+      margin-right: 9px;
+    }
+  }
 }

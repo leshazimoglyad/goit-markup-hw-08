@@ -18,15 +18,17 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navigation">
-          <a class="logo logo--blue" href="" lang="ru"
-            >Web<span class="logo logo--black">Studio</span>
-          </a>
-          <button class="logo__button" data-menu-open>
-            <svg class="logo__button-icon">
+        <a class="logo logo--blue" href="" lang="ru"
+          >Web<span class="logo logo--black">Studio</span>
+        </a>
+        <div class="logo-button">
+          <button class="logo-button__btn" data-menu-open>
+            <svg class="logo-button__icon">
               <use href="./images/symbol-defs.svg#menu_24px"></use>
             </svg>
           </button>
+        </div>
+        <nav class="navigation">
           <ul class="menu">
             <li class="menu__item">
               <a class="menu__link current" href="./index.html">Студия</a>
@@ -59,13 +61,13 @@
         </ul>
       </div>
       <div class="mob-menu is-hidden" data-menu>
+        <button class="mob-menu__button" data-menu-close>
+          <svg class="mob-menu__button-icon">
+            <use href="./images/symbol-defs.svg#icon-krestik"></use>
+          </svg>
+        </button>
         <div class="container">
           <div class="mob-menu-top">
-            <button class="mob-menu__button" data-menu-close>
-              <svg class="mob-menu__button-icon">
-                <use href="./images/symbol-defs.svg#icon-krestik"></use>
-              </svg>
-            </button>
             <ul class="mob-menu-list">
               <li class="mob-menu-list__item">
                 <a class="mob-menu-list__link" href="./index.html">Студия</a>
@@ -99,7 +101,6 @@
                 </a>
               </li>
             </ul>
-
             <ul class="mob-soc-list__menu">
               <li class="mob-soc-list__item">
                 <a class="mob-soc-list__text">Instagram</a>
@@ -212,11 +213,16 @@
         <div class="container">
           <ul class="personnel-menu">
             <li class="personnel-menu__item">
-              <img
-                class="personnel-img"
-                src="./images/imagea.jpg"
-                alt="игорь_демьяненко"
-              />
+              <picture>
+                <source />
+                <source />
+                <source />
+                <img
+                  class="personnel-img"
+                  src="./images/imagea.jpg"
+                  alt="игорь_демьяненко"
+                />
+              </picture>
               <div class="personnel-container">
                 <h3 class="personnel-name">Игорь Демьяненко</h3>
                 <p class="personnel-profession" lang="en">Product Designer</p>
@@ -259,11 +265,16 @@
               </div>
             </li>
             <li class="personnel-menu__item">
-              <img
-                class="personnel-img"
-                src="./images/imageb.jpg"
-                alt="ольга_репина"
-              />
+              <picture>
+                <source />
+                <source />
+                <source />
+                <img
+                  class="personnel-img"
+                  src="./images/imageb.jpg"
+                  alt="ольга_репина"
+                />
+              </picture>
               <div class="personnel-container">
                 <h3 class="personnel-name">Ольга Репина</h3>
                 <p class="personnel-profession" lang="en">Frontend Developer</p>
@@ -306,11 +317,16 @@
               </div>
             </li>
             <li class="personnel-menu__item">
-              <img
-                class="personnel-img"
-                src="./images/imagec.jpg"
-                alt="николай_тарасов"
-              />
+              <picture>
+                <source srcset="" />
+                <source />
+                <source />
+                <img
+                  class="personnel-img"
+                  src="./images/imagec.jpg"
+                  alt="николай_тарасов"
+                />
+              </picture>
               <div class="personnel-container">
                 <h3 class="personnel-name">Николай Тарасов</h3>
                 <p class="personnel-profession" lang="en">Marketing</p>
@@ -353,11 +369,15 @@
               </div>
             </li>
             <li class="personnel-menu__item">
-              <img
-                class="personnel-img"
-                src="./images/imaged.jpg"
-                alt="михаил_ермаков"
-              />
+              <picture>
+                <source />
+                <source />
+                <source />
+                <img
+                  class="personnel-img"
+                  src="./images/imaged.jpg"
+                  alt="михаил_ермаков"
+              /></picture>
               <div class="personnel-container">
                 <h3 class="personnel-name">Михаил Ермаков</h3>
                 <p class="personnel-profession" lang="en">UI Designer</p>
