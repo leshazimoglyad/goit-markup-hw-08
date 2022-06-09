@@ -5,11 +5,14 @@
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
+  left: 0;
   @media screen and (min-width: 768px) {
     padding-top: 21px;
-    padding-bottom: 21px;
+    padding-bottom: 20px;
   }
   @media screen and (min-width: 1200px) {
+    padding-top: 25px;
+    padding-bottom: 24px;
   }
 }
 .header .container {
@@ -166,18 +169,26 @@
 }
 
 .contact-button-email-icon {
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
+  width: 14px;
+  height: 10px;
+  margin-right: 8px;
+  @media screen and(min-width:1200px) {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 .contact-button-phone-icon {
   width: 10px;
-  height: 16px;
-  margin-right: 10px;
+  height: 14px;
+  margin-right: 8px;
+  @media screen and(min-width:1200px) {
+    height: 16px;
+    margin-right: 10px;
+  }
 }
 .contact__link {
   font-weight: 500;
-
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -192,18 +203,21 @@
     color: #2196f3;
   }
   @media screen and(min-width:480px) {
-    font-size: 14px;
   }
   @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.16;
     padding-bottom: 0px;
     padding-top: 0px;
   }
   @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 .number {
   @media screen and (min-width: 460px) {
-    padding-top: 10px;
+    margin-top: 10px;
   }
   @media screen and (min-width: 768px) {
   }
@@ -287,7 +301,7 @@
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
-  font-size: calc(8px + (10 + 10 * 1) * ((100vw - 280px) / 480));
+  font-size: calc(24px + (16 + 16 * 1) * ((100vw - 280px) / 480));
   &:hover {
     color: #2196f3;
   }
