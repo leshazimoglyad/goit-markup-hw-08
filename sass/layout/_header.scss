@@ -370,7 +370,6 @@
 }
 .mob-soc-list__item {
   &:not(:first-child) {
-    margin-left: 10px;
     &::before {
       content: "";
       width: 22px;

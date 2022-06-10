@@ -459,10 +459,6 @@ h6 {
   color: #2196f3;
 }
 
-.mob-soc-list__item:not(:first-child) {
-  margin-left: 10px;
-}
-
 .mob-soc-list__item:not(:first-child)::before {
   content: "";
   width: 22px;
