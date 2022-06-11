@@ -154,7 +154,10 @@
 .contact__item {
   fill: #757575;
   &:hover {
-    fill: #2196f3;
+    color: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
   }
 }
 .contact__item:not(:last-child) {
