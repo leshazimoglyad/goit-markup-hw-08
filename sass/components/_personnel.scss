@@ -24,7 +24,7 @@
   margin-bottom: 30px;
   background-color: var(--background-color);
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 120px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
@@ -59,8 +59,6 @@
 .personnel-button-menu {
   display: flex;
   list-style: none;
-  margin-left: 32px;
-  margin-right: 32px;
   margin-top: 16px;
   justify-content: center;
   & :not(:last-child) {
