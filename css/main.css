@@ -1632,19 +1632,23 @@ h6 {
 .work-menu__link {
   height: 100%;
   flex-direction: column;
-  position: relative;
-  overflow: hidden;
 }
 
 .work-menu__link:hover {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid #eeeeee;
 }
 
 .work-menu__link:focus {
   box-sizing: border-box;
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.work-img-container {
+  overflow: hidden;
+  position: relative;
 }
 
 .work-information {
