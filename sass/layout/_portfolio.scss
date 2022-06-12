@@ -39,6 +39,13 @@
     }
   }
 }
+.no {
+  @media screen and(
+    max-width:760px
+  ) {
+    margin-top: 0px;
+  }
+}
 
 .main-portfolio__button {
   font-family: "Roboto";
@@ -122,8 +129,15 @@
   &:not(:last-child) {
     margin-bottom: 30px;
     @media screen and (min-width: 480px) {
-      max-width: 1200px;
+      max-width: 1100px;
     }
+  }
+}
+.no-margin {
+  @media screen and(
+    min-width:1200px
+  ) {
+    margin-bottom: 0px;
   }
 }
 .work-menu__link {
