@@ -1,6 +1,7 @@
 .hero {
   width: 100%;
   height: 100%;
+  flex-grow: 1;
   margin-left: auto;
   margin-right: auto;
   background: #2f303a;
@@ -14,28 +15,24 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  @media screen and (min-width: 480px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../images/headerimgmob.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.4),
-          rgba(47, 48, 58, 0.4)
-        ),
-        url(../images/headerimgmob-2x.jpg);
-    }
+      url(../images/hero-mob2x.jpg);
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/headerimgmobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -43,17 +40,15 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../images/headerimgmobile-2x.jpg);
+        url(../images/hero-plan2x.jpg);
     }
   }
-
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero1600ok-1x.jpg);
-    max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -70,6 +65,7 @@
 }
 
 .hero__title {
+  width: 100%;
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
@@ -78,9 +74,10 @@
   text-transform: uppercase;
   color: var(--background-color);
   margin: 0 auto;
-  width: 360px;
+
   letter-spacing: 0.06em;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 450px) {
+    width: 360px;
   }
   @media screen and (min-width: 768px) {
   }
@@ -139,6 +136,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -171,7 +169,6 @@
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
-    width: 270px;
   }
 }
 .hero-menu__button-icon {

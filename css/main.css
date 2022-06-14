@@ -418,16 +418,18 @@ h6 {
   color: #2196f3;
 }
 
-.mob-contact {
-  color: #757575;
+.mob-menu-list__link.current {
+  color: #2196f3;
 }
 
 .mob-number {
   margin-bottom: 32px;
+  color: #2196f3;
 }
 
 .mob-email {
   margin-bottom: 64px;
+  color: #757575;
 }
 
 .mob-font-number {
@@ -437,14 +439,6 @@ h6 {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #757575;
-}
-
-.mob-font-number:hover {
-  color: #2196f3;
-}
-
-.mob-font-number:focus {
   color: #2196f3;
 }
 
@@ -502,19 +496,19 @@ h6 {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 479px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 767px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1199px;
+    max-width: 1200px;
   }
 }
 
@@ -551,6 +545,7 @@ h6 {
 .hero {
   width: 100%;
   height: 100%;
+  flex-grow: 1;
   margin-left: auto;
   margin-right: auto;
   background: #2f303a;
@@ -562,47 +557,44 @@ h6 {
   background-position: center;
 }
 
-@media screen and (min-width: 480px) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerimgmob.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob2x.jpg);
   }
 }
 
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerimgmob-2x.jpg);
-  }
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerimgmobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerimgmobile-2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-plan2x.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1600ok-1x.jpg);
-    max-width: 1600px;
     max-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1600ok-2x.jpg);
   }
 }
 
 .hero__title {
+  width: 100%;
   font-style: normal;
   font-weight: 900;
   font-size: 26px;
@@ -611,8 +603,13 @@ h6 {
   text-transform: uppercase;
   color: var(--background-color);
   margin: 0 auto;
-  width: 360px;
   letter-spacing: 0.06em;
+}
+
+@media screen and (min-width: 450px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -674,6 +671,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
+    margin-bottom: -30px;
   }
 }
 
@@ -707,12 +705,6 @@ h6 {
   background-size: contain;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .hero-menu__button {
-    width: 270px;
-  }
 }
 
 .hero-menu__button-icon {
@@ -929,6 +921,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
   justify-content: center;
 }
 
@@ -1289,8 +1282,7 @@ h6 {
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  width: 100%;
   position: absolute;
   background: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1299,6 +1291,13 @@ h6 {
   top: 50%;
   transform: translate(-50%, -50%);
   padding: 40px;
+}
+
+@media screen and (min-width: 450px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1532,6 +1531,7 @@ h6 {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  margin-top: -15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1539,6 +1539,7 @@ h6 {
     justify-content: center;
     flex-wrap: nowrap;
     margin-bottom: 30px;
+    margin-top: 0px;
   }
 }
 
@@ -1560,12 +1561,6 @@ h6 {
 
 .main-portfolio__button-item:not(:last-child) {
   margin-right: 8px;
-}
-
-@media screen and (max-width: 767px) {
-  .no {
-    margin-top: 0px;
-  }
 }
 
 .main-portfolio__button {
@@ -1631,7 +1626,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (max-width: 1199.98px) {
   .work-menu__item:not(:last-child) {
     margin-bottom: 30px;
   }

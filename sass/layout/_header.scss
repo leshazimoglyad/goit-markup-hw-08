@@ -325,15 +325,17 @@
     color: #2196f3;
   }
 }
-.mob-contact {
-  color: #757575;
+.mob-menu-list__link.current {
+  color: #2196f3;
 }
 
 .mob-number {
   margin-bottom: 32px;
+  color: #2196f3;
 }
 .mob-email {
   margin-bottom: 64px;
+  color: #757575;
 }
 .mob-font-number {
   font-family: "Roboto";
@@ -342,13 +344,7 @@
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #757575;
-  &:hover {
-    color: #2196f3;
-  }
-  &:focus {
-    color: #2196f3;
-  }
+  color: #2196f3;
 }
 .mob-font-email {
   font-family: "Roboto";
