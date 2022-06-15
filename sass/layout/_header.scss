@@ -33,50 +33,31 @@
   &--black {
     color: var(--secondary-color);
   }
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
 }
 .logo-button {
   margin-left: auto;
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     display: none;
-  }
-  @media screen and (min-width: 1200px) {
   }
 }
 .logo-button__btn {
   width: 40px;
   height: 40px;
   background-color: #fff;
-
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     display: none;
-  }
-  @media screen and (min-width: 1200px) {
   }
 }
 
 .navigation {
   display: none;
   align-items: center;
-
   @media screen and (min-width: 768px) {
     margin-left: 88px;
     display: flex;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
-  }
-
-  @media screen and (min-width: 480px) {
   }
 }
 .logo-button__icon {
@@ -90,13 +71,9 @@
   }
   &:focus {
     fill: #2196f3;
-    @media screen and (min-width: 480px) {
-    }
   }
   @media screen and (min-width: 768px) {
     display: none;
-  }
-  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -217,8 +194,6 @@
   &:focus {
     color: #2196f3;
   }
-  @media screen and(min-width:480px) {
-  }
   @media screen and (min-width: 768px) {
     font-size: 12px;
     line-height: 1.16;
@@ -231,10 +206,8 @@
   }
 }
 .number {
-  @media screen and (min-width: 460px) {
+  @media screen and (min-width: 450px) {
     margin-top: 10px;
-  }
-  @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1200px) {
     margin-top: 0px;
@@ -258,14 +231,9 @@
     justify-content: space-between;
     position: relative;
     padding: 0;
-  }
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -386,7 +354,6 @@
       width: 22px;
       height: 0px;
       border-right: 1px solid rgba(33, 33, 33, 0.2);
-
       transform: rotate(90deg);
       margin-right: 9px;
     }

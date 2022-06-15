@@ -24,7 +24,7 @@
       ),
       url(../images/hero-mob2x.jpg);
   }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 199.99px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -43,7 +43,7 @@
         url(../images/hero-plan2x.jpg);
     }
   }
-  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -141,8 +141,6 @@
     margin-left: -30px;
     margin-bottom: -30px;
   }
-  @media screen and (min-width: 1200px) {
-  }
 }
 .hero-menu__item {
   margin-bottom: 30px;
@@ -167,12 +165,6 @@
   background-size: contain;
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 480px) {
-  }
-  @media screen and (min-width: 768px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
 }
 .hero-menu__button-icon {
   width: 70px;
@@ -192,8 +184,6 @@
   color: var(--secondary-color);
   margin-bottom: 10px;
   text-align: center;
-  @media screen and (min-width: 480px) {
-  }
   @media screen and (min-width: 768px) {
     text-align: start;
   }
