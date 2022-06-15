@@ -315,7 +315,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 460px) {
+@media screen and (min-width: 450px) {
   .number {
     margin-top: 10px;
   }
@@ -337,7 +337,6 @@ h6 {
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
-  padding-left: 40px;
 }
 
 .mob-menu .container {
@@ -349,8 +348,14 @@ h6 {
   padding: 0;
 }
 
+@media screen and (min-width: 450px) {
+  .mob-menu .container {
+    padding-left: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
-  .mob-menu {
+  .mob-menu .container {
     display: none;
   }
 }
@@ -563,7 +568,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199.99px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/headerimgmobile.jpg);
     background-repeat: no-repeat;
@@ -572,13 +577,13 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (max-width: 1199.99px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.99px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.99px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-plan2x.jpg);
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero1600ok-1x.jpg);
     max-height: 600px;
@@ -587,12 +592,9 @@ h6 {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1600px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (max-width: 1600px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-comp2x.jpg);
-    max-height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -751,12 +753,6 @@ h6 {
 }
 
 @media screen and (min-width: 480px) {
-  .employment {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .employment {
     display: none;
   }

@@ -24,7 +24,7 @@
       ),
       url(../images/hero-mob2x.jpg);
   }
-  @media screen and (min-width: 768px) and (max-width: 199.99px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -60,9 +60,6 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/hero-comp2x.jpg);
-      max-height: 600px;
-      padding-top: 200px;
-      padding-bottom: 200px;
     }
   }
 }
