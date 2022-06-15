@@ -1358,6 +1358,10 @@ h6 {
   outline: none;
 }
 
+.input-modal:hover {
+  border-color: #2196f3;
+}
+
 .input-modal:focus {
   border-color: #2196f3;
 }
@@ -1374,6 +1378,10 @@ h6 {
   content: "";
 }
 
+.input-modal:hover + .modal-input-wrap__icon {
+  fill: #2196f3;
+}
+
 .input-modal:focus + .modal-input-wrap__icon {
   fill: #2196f3;
 }
@@ -1386,6 +1394,14 @@ h6 {
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
+}
+
+.modal-input-wrap-lable:hover {
+  color: #2196f3;
+}
+
+.modal-input-wrap-lable:focus {
+  color: #2196f3;
 }
 
 .modal-field {

@@ -75,6 +75,9 @@
   margin-top: 4px;
   padding-left: 42px;
   outline: none;
+  &:hover {
+    border-color: #2196f3;
+  }
   &:focus {
     border-color: #2196f3;
   }
@@ -90,6 +93,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   content: "";
+  .input-modal:hover + & {
+    fill: #2196f3;
+  }
   .input-modal:focus + & {
     fill: #2196f3;
   }
@@ -101,8 +107,13 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-
   color: #757575;
+  &:hover {
+    color: #2196f3;
+  }
+  &:focus {
+    color: #2196f3;
+  }
 }
 
 .modal-field {
