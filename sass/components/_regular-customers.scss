@@ -71,12 +71,13 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition-property: fill;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    border: 1px solid #2196f3;
     fill: #2196f3;
   }
   &:focus {
-    border: 1px solid #2196f3;
     fill: #2196f3;
   }
 }
