@@ -83,6 +83,10 @@
     background-color: #2196f3;
     fill: var(--background-color);
   }
+  &:focus {
+    background-color: #2196f3;
+    fill: var(--background-color);
+  }
 }
 .button-personnel__icon {
   width: 20px;
