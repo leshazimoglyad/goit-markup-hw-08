@@ -113,8 +113,8 @@
     margin-bottom: 0px;
   }
 }
-.work-menu__item:hover .work-img-container__text,
-.work-menu__item:focus .work-img-container__text {
+.work-menu__link:hover .work-img-container__text,
+.work-menu__link:focus .work-img-container__text {
   transform: translateY(0%);
 }
 
