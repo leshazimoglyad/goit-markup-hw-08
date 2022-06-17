@@ -48,7 +48,9 @@
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform;
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
     background-color: #2196f3;
     color: var(--background-color);
@@ -147,7 +149,6 @@
   position: absolute;
   top: 0;
   background: rgba(33, 150, 243, 0.9);
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -175,7 +176,6 @@
   margin-bottom: 4px;
 }
 .work-information__text {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
